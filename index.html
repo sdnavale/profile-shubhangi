@@ -1,54 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index file</title>
+    <!-- CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- CDN Link - Google font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&family=Roboto:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        header span{
-            padding: 10px;
-            background-color: #f6bdf6;
-        }
-        footer a{
-            background-color:rgb(9, 109, 109)
-            color:#0000ff;
-            margin-left:40px;
-        }
-        nav a{
-            margin-right: 40px;
-            text-decoration: none;
-            background-color:#fcc6a0;
-        }
-        #homeLink{
-            margin-left: 20px;
-        }
+         header span{
+             padding: 10px;
+             background-color: #f6bdf6;
+         }
+         header{
+           text-align: right;
+         }
+         footer a{
+             background-color:#096d6d
+             color:#0000ff;
+             margin-left:40px;
+         }
+         nav a{
+             margin-right: 40px;
+             text-decoration: none;
+             background-color:#fcc6a0;
+             font-family: 'Poppins', sans-serif;
+         }
+         #homeLink{
+             margin-left: 20px;
+         }
+         /* icon size increase & decrease using font-size */
+         .icon {
+                 font-size: 32px;
+              }
+              div {
+                color: #231296;
+               text-align: left;
+               font-size: 30px;
+    }
     </style>
-</head>
-<body>
-<!-- Header Section -->
-<header>
-    <span> Name: Shubhangi Navale</span> <span> Mobile: 8600255066</span>  <span>Email: abc@gmail.com</span>
-</header>
-<hr>
-   <!-- Navigation Section -->
-<nav>
-    <a href="home.html" target="mainFrame" id="homeLink">HOME</a> 
-    <a href="techStack.html" target="mainFrame">TECH STACK</a> 
-    <a href="project.html" target="mainFrame">PROJECT</a> 
-    <a href="education.html" target="mainFrame">EDUCATION</a> 
-    <a href="others.html" target="mainFrame">OTHERS</a>
-</nav>
-<hr>
-   <!-- Body Section -->
-<iframe src="home.html" name="mainFrame" frameborder="0" width="900px" height="450px">
-
-</iframe>
-<!-- Footer Section -->
-<footer>
-    <a href="https://www.linkedin.com/feed/" target="_blank">Linked IN</a> 
-    <a href=" https://github.com/" target="_blank">GitHub</a>
-    <a href="https://www.naukri.com/mnjuser/homepage">Naukri</a>
-
-</footer>
-</body>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+    <div>
+      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+      <img src="assets/SNLogo.png" height="25px" width="25px" alt="this is Devloper image"/></div>
+      <span>
+        <i class="fa fa-user" aria-hidden="true"></i> Shubhangi Navale
+      </span>
+      <span>
+        <i class="fa fa-phone-square" aria-hidden="true"></i> 8600 255 066
+      </span>
+      <span>
+        <i class="fa fa-envelope" aria-hidden="true"></i> abc@gmail.com</span
+      >
+    </header>
+    <hr />
+    <!-- Navigation Section -->
+    <nav>
+      <a href="home.html" target="mainFrame" id="homeLink">HOME</a>
+      <a href="techStack.html" target="mainFrame">TECH STACK</a>
+      <a href="project.html" target="mainFrame">PROJECT</a>
+      <a href="education.html" target="mainFrame">EDUCATION</a>
+      <a href="others.html" target="mainFrame">OTHERS</a>
+    </nav>
+    <hr />
+    <!-- Body Section -->
+    <iframe
+      src="home.html"
+      name="mainFrame"
+      frameborder="0"
+      width="900px"
+      height="450px"
+    >
+    </iframe>
+    <!-- Footer Section -->
+    <footer class="icon">
+      <span
+        ><a href="https://www.linkedin.com/feed/" target="_blank"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a
+      ></span>
+      <span>
+        <a href=" https://github.com/" target="_blank"
+          ><i class="fa fa-github-square" aria-hidden="true"></i></a
+      ></span>
+      <span
+        ><a href="https://www.naukri.com/mnjuser/homepage"
+          ><i class="fa fa-laptop" aria-hidden="true"></i></a
+      ></span>
+    </footer>
+  </body>
 </html>
