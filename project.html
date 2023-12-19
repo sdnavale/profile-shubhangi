@@ -16,8 +16,15 @@
             font-family: 'Roboto', sans-serif;
         }
          body{
-            background-color:#87ceeb;
+            background-color:#c0f5f5;
         }
+        p::selection{
+            background-color: #ff0000;
+        }
+        #List li::selection{
+            background-color: #ff0000;
+        }
+
     </style>
 </head>
 <body>
@@ -29,7 +36,7 @@
 </p>
 <hr>
 <h2>Roles and Responsibilities : </h2>
-<ul>
+<ul id="List">
     <li> Designed and implemented the user interface using <strong> HTML5</strong> and <strong > CSS </strong></li> 
         <li> work closely with backend devlopers for code integration</li> 
             <li> Identifying and troubleshooting issues with front end code </li> 

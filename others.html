@@ -16,11 +16,21 @@
         font-family: 'Roboto', sans-serif;
       }
       body{
-            background-color:#87ceeb;
+            background-color:#c0f5f5;
         }
         #fname{
           margin:20px 0px 20px 0px;
         }
+       p::selection{
+          background-color: #ff0000;
+        }
+        #fname::selection{
+          background-color: #ff0000;
+        }
+        #fname1::selection{
+          background-color: #ff0000;
+        }
+        
       </style>
 </head>
 <body>
@@ -38,7 +48,7 @@
       <summary><strong> Family Details</strong></summary>
       <ul>
         <li id="fname"><strong>Father Name :</strong> Sumit Jadhav</li>
-        <li><strong>Mother Name :</strong> Sonali Jadhav</li>
+        <li id="fname1"><strong>Mother Name :</strong> Sonali Jadhav</li>
       </ul>
     </details>
   

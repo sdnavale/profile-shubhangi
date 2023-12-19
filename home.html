@@ -37,21 +37,30 @@
 
       }
       ul li {
-        list-style-type: circle;
+        list-style-type: none;
       }
       body {
-        background-color: #87ceeb;
+        background-color:rgb(192, 245, 245);
+      }
+      #List li::before{
+        content: "👉";
+      }
+      #para::selection{
+        background-color: #ff0000;
+      }
+      #List li::selection{
+        background-color: #ff0000;
       }
     </style>
   </head>
   <body>
     <h3 class="heading"><strong> Career Objectives </strong></h3>
-    <p>
+    <p id="para">
       To Work in organization where i can learn and grow my skills and help
       organizational growth
     </p>
-    <h3><strong>Professional Summery</strong></h3>
-    <ul>
+    <h3 id="head"><strong>Professional Summery</strong></h3>
+    <ul id="List">
       <li>
         Having 5 Years of experience in developing single page Web Applications
         using <span>Angular 8</span>,HTML5 ,CSS3 ,Bootstrap 5 , Javascript , Es6
